@@ -7,15 +7,15 @@ interface State {
 
 export default class HomeDetails extends React.Component<never, State> {
   defaultState = {
-    isMounted: true,
+    isMounted: false,
   };
 
   state: State = {
-    isMounted: true,
+    isMounted: false,
   };
 
   componentDidMount() {
-    this.validateDOMContent();
+    this.setState(() => ({isMounted: true}), () => this.validateDOMContent());
   }
 
   render() {
