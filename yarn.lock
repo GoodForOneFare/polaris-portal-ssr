@@ -261,15 +261,20 @@
     lodash "^4.17.4"
     lodash-decorators "^4.3.5"
 
-"@shopify/polaris@^2.6.1":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-2.6.1.tgz#edfb06ab0c4b62137336e59ed4ee5fc4d3f0bfb2"
+"@shopify/polaris-tokens@^1.2.0":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris-tokens/-/polaris-tokens-1.3.1.tgz#e4cd1feaa2a886867332a3829ec331ebf5a19bcb"
+
+"@shopify/polaris@^3.0.0-beta.0":
+  version "3.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-3.0.0-beta.0.tgz#b95bedd11b02332e0aa85efe1828111180ae9c85"
   dependencies:
     "@shopify/images" "^1.1.0"
     "@shopify/javascript-utilities" "^2.2.0"
+    "@shopify/polaris-tokens" "^1.2.0"
     "@shopify/react-html" "^3.0.3"
-    "@shopify/react-utilities" "^2.0.3"
-    "@types/prop-types" "^15.5.2"
+    "@shopify/react-utilities" "2.0.0-beta.9"
+    "@types/prop-types" "^15.5.5"
     "@types/react" "^16.4.7"
     "@types/react-dom" "^16.0.6"
     "@types/react-transition-group" "^2.0.7"
@@ -279,7 +284,7 @@
     lodash "^4.17.4"
     lodash-decorators "^4.3.5"
     prop-types "^15.6.1"
-    react-transition-group "^2.3.0"
+    react-transition-group "^2.4.0"
     tslib "^1.8.0"
 
 "@shopify/react-compose@^0.1.5":
@@ -308,6 +313,17 @@
   dependencies:
     serialize-javascript "^1.5.0"
 
+"@shopify/react-utilities@2.0.0-beta.9":
+  version "2.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@shopify/react-utilities/-/react-utilities-2.0.0-beta.9.tgz#0b1df35bb7bc0369adc955c6ea59a743bffc1ef1"
+  dependencies:
+    "@shopify/javascript-utilities" "^2.1.0"
+    "@types/classnames" "^2.2.3"
+    "@types/node" "^8.0.41"
+    "@types/react" "^16.0.10"
+    classnames "^2.2.5"
+    core-js "^2.5.1"
+
 "@shopify/react-utilities@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@shopify/react-utilities/-/react-utilities-2.0.2.tgz#812c436b4b4ef95f89106faf2cb3445bdca7748f"
@@ -320,21 +336,9 @@
     classnames "^2.2.5"
     core-js "^2.5.6"
 
-"@shopify/react-utilities@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@shopify/react-utilities/-/react-utilities-2.0.3.tgz#424421e7202b402ec7934c137b5b7e035fbeb33c"
-  dependencies:
-    "@shopify/javascript-utilities" "^2.1.0"
-    "@types/classnames" "^2.2.3"
-    "@types/node" "^10.0.8"
-    "@types/react" "^16.3.14"
-    "@types/react-dom" "^16.0.5"
-    classnames "^2.2.5"
-    core-js "^2.5.6"
-
-"@shopify/sewing-kit@^0.54.0":
-  version "0.54.0"
-  resolved "https://registry.yarnpkg.com/@shopify/sewing-kit/-/sewing-kit-0.54.0.tgz#adcf84efb816bfa102bbacf1275d80090b2928ce"
+"@shopify/sewing-kit@^0.56.0":
+  version "0.56.1"
+  resolved "https://registry.yarnpkg.com/@shopify/sewing-kit/-/sewing-kit-0.56.1.tgz#8d3714df592e5a3e9b259a4700a57bd7beffd01e"
   dependencies:
     "@shopify/images" "^1.1.4"
     "@types/jest" "^23.3.1"
@@ -349,6 +353,7 @@
     cache-loader "^1.2.2"
     case-sensitive-paths-webpack-plugin "^2.1.2"
     chalk "^2.3.2"
+    compression-webpack-plugin "^1.1.11"
     core-js "^2.5.0"
     css-loader "^0.28.11"
     element-dataset "^2.2.6"
@@ -364,7 +369,7 @@
     graphql-tag "^2.9.1"
     graphql-typed "^0.1.3"
     graphql-typescript-definitions "^0.10.0"
-    graphql-validate-fixtures "^0.8.4"
+    graphql-validate-fixtures "^0.8.5"
     happypack "^5.0.0"
     hard-source-webpack-plugin "~0.10.1"
     identity-obj-proxy "^3.0.0"
@@ -570,7 +575,11 @@
   version "10.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.2.tgz#f19f05314d5421fe37e74153254201a7bf00a707"
 
-"@types/prop-types@*", "@types/prop-types@^15.5.2":
+"@types/node@^8.0.41":
+  version "8.10.29"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.29.tgz#b3a13b58dd7b0682bf1b42022bef4a5a9718f687"
+
+"@types/prop-types@*", "@types/prop-types@^15.5.5":
   version "15.5.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.5.tgz#17038dd322c2325f5da650a94d5f9974943625e3"
   dependencies:
@@ -619,6 +628,13 @@
   version "16.4.2"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.2.tgz#f1a9cf1ee85221530def2ac26aee20f910a9dac8"
   dependencies:
+    csstype "^2.2.0"
+
+"@types/react@^16.0.10":
+  version "16.4.14"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.14.tgz#47c604c8e46ed674bbdf4aabf82b34b9041c6a04"
+  dependencies:
+    "@types/prop-types" "*"
     csstype "^2.2.0"
 
 "@types/react@^16.3.14":
@@ -2284,7 +2300,7 @@ bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
 
-cacache@^10.0.4:
+cacache@^10.0.1, cacache@^10.0.4:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/cacache/-/cacache-10.0.4.tgz#6452367999eff9d4188aefd9a14e9d7c6a263460"
   dependencies:
@@ -2823,6 +2839,16 @@ compressible@~2.0.14:
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.14.tgz#326c5f507fbb055f54116782b969a81b67a29da7"
   dependencies:
     mime-db ">= 1.34.0 < 2"
+
+compression-webpack-plugin@^1.1.11:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/compression-webpack-plugin/-/compression-webpack-plugin-1.1.12.tgz#becd2aec620ace96bb3fe9a42a55cf48acc8b4d4"
+  dependencies:
+    cacache "^10.0.1"
+    find-cache-dir "^1.0.0"
+    neo-async "^2.5.0"
+    serialize-javascript "^1.4.0"
+    webpack-sources "^1.0.1"
 
 compression@^1.5.2:
   version "1.7.3"
@@ -5315,7 +5341,7 @@ graphql-typescript-definitions@^0.10.0:
     graphql "^0.13.2"
     graphql-tool-utilities "^0.7.4"
 
-graphql-validate-fixtures@^0.8.4:
+graphql-validate-fixtures@^0.8.5:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/graphql-validate-fixtures/-/graphql-validate-fixtures-0.8.5.tgz#c941b9052db4bff06b886378f67d72ef718f7999"
   dependencies:
@@ -9683,7 +9709,7 @@ react-test-renderer@^16.0.0-0:
     prop-types "^15.6.0"
     react-is "^16.4.1"
 
-react-transition-group@^2.3.0:
+react-transition-group@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.4.0.tgz#1d9391fabfd82e016f26fabd1eec329dbd922b5a"
   dependencies:

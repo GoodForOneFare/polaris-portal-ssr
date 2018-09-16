@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@shopify/javascript-utilities": "^2.1.0",
-    "@shopify/polaris": "^2.6.1",
+    "@shopify/polaris": "^3.0.0-beta.0",
     "@shopify/react-compose": "^0.1.5",
     "@shopify/react-html": "^3.0.2",
     "@shopify/react-utilities": "^2.0.2",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@shopify/enzyme-utilities": "^1.1.1",
-    "@shopify/sewing-kit": "^0.54.0",
+    "@shopify/sewing-kit": "^0.56.0",
     "@types/enzyme": "^3.1.11",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/fs-extra": "^5.0.3",
